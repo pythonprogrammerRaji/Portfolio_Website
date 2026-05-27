@@ -1,0 +1,96 @@
+/* ================================================
+   MOBILE  (max-width: 576px)
+   ================================================ */
+
+@media (max-width: 576px) {
+
+    /* Hero section */
+    #home {
+        padding-top: 90px;
+        text-align: center;
+    }
+
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+    .hero-desc {
+        margin: 0 auto 24px auto;
+    }
+
+    .hero-btns,
+    .social-row {
+        justify-content: center;
+    }
+
+    /* Show photo above text on mobile */
+    .hero-img-col {
+        order: -1;
+    }
+
+    .hero-photo,
+    .photo-placeholder {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    /* About section */
+    .detail-card {
+        padding: 20px;
+    }
+
+    /* Experience */
+    .exp-card {
+        padding: 20px;
+    }
+
+    .exp-head {
+        flex-direction: column;
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: 20px;
+    }
+
+    /* Section padding reduce */
+    section {
+        padding: 60px 0;
+    }
+
+}
+
+
+/* ================================================
+   TABLET  (577px – 991px)
+   ================================================ */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    #home {
+        padding-top: 95px;
+        text-align: center;
+    }
+
+    .hero-desc {
+        margin: 0 auto 24px auto;
+    }
+
+    .hero-btns,
+    .social-row {
+        justify-content: center;
+    }
+
+    .hero-photo,
+    .photo-placeholder {
+        width: 240px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    .exp-head {
+        flex-direction: column;
+    }
+
+}
