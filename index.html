@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeshwari | Full Stack Developer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/media.css">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand fw-bold" href="#home">Port<span>folio</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <i class="fa-solid fa-bars" style="color: var(--text-main);"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn-main" href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+
+            <!-- Dark/Light Toggle -->
+            <button class="theme-btn ms-3" id="themeBtn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i> Dark
+            </button>
+
+        </div>
+    </nav>
+
+
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-hand-wave"></i> Available for Opportunities
+                    </div>
+                    <h1 class="hero-name">Rajeshwari</h1>
+                    <p class="hero-role">
+                        And I'm a <span class="typewriter_text"></span>
+                    </p>
+                    <p class="hero-desc">
+                        Final-year MCA student passionate about building responsive, user-friendly web applications.
+                        Turning ideas into clean, scalable code — one project at a time.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap mb-4">
+                        <a href="#projects" class="btn-main">View My Work</a>
+                        <a href="Rajeshwari_Cv.pdf" target="_blank" download class="btn-second">
+                            Download CV <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="https://github.com/pythonprogrammerRaji" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajeshwari-65411527a" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=rajeshwarirajeshwari34879@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rajeshwari_b_rajji?igsh=YXh2OYU5cWowZDZ4" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <img src="static/images/p.jpeg" alt="Rajeshwari" class="hero-photo"
+                         onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+                    <div class="photo-placeholder" id="photoPlaceholder" style="display:none;">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="about" class="alt-section">
+        <div class="container">
+            <div class="section-top">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+
+            <div class="row g-5 align-items-start">
+
+                <div class="col-lg-6">
+                    <p class="body-text">
+                        I am a Final-year MCA student at Rajarajeswari College of Engineering, Bengaluru
+                        with a CGPA of 9.01. I am passionate about building responsive, user-friendly web
+                        applications that solve real problems.
+                    </p>
+                    <p class="body-text">
+                        Currently interning as a Full Stack Developer at Builtline Construction, where I have
+                        built and deployed live production websites for real business clients — achieving
+                        92% SEO performance and 30% improvement in user engagement.
+                    </p>
+                    <p class="body-text">
+                        Background: Studied in Kannada Medium till 10th, completed BSc in Computer Science,
+                        and now pursuing MCA. My goal is to become a skilled Software Engineer who builds
+                        meaningful digital experiences.
+                    </p>
+
+                    <div class="row g-3 mt-2">
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <div class="stat-num">9.01</div>
+                                <div class="stat-label">MCA CGPA</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <div class="stat-num">2+</div>
+                                <div class="stat-label">Live Projects</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <div class="stat-num">92%</div>
+                                <div class="stat-label">SEO Score</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <div class="stat-num">5+</div>
+                                <div class="stat-label">Months Intern</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-lg-6">
+                    <div class="detail-card">
+
+                        <div class="detail-row">
+                            <i class="fa-solid fa-graduation-cap detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Education</p>
+                                <p class="detail-val">MCA - Final Year, RRCE Bengaluru</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-row">
+                            <i class="fa-solid fa-briefcase detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Current Role</p>
+                                <p class="detail-val">Full Stack Developer Intern</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-row">
+                            <i class="fa-solid fa-building detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Company</p>
+                                <p class="detail-val">Builtline Construction, Bengaluru</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-row">
+                            <i class="fa-solid fa-location-dot detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Location</p>
+                                <p class="detail-val">Bengaluru, Karnataka, India</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-row">
+                            <i class="fa-solid fa-envelope detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Email</p>
+                                <p class="detail-val">rajeshwarirajeshwari34879@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-row last">
+                            <i class="fa-solid fa-bullseye detail-icon"></i>
+                            <div>
+                                <p class="detail-label">Looking For</p>
+                                <p class="detail-val">Full Stack / Frontend Developer Role/ Web Developer Role</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-top">
+                <p class="section-label">What I Know</p>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-cat">
+                        <h3 class="skill-cat-title">
+                            <i class="fa-solid fa-code"></i> Frontend
+                        </h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>ReactJS</span>
+                            <span>Responsive Design</span>
+                            <span>UI / UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-cat">
+                        <h3 class="skill-cat-title">
+                            <i class="fa-solid fa-server"></i> Backend
+                        </h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>REST API</span>
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-cat">
+                        <h3 class="skill-cat-title">
+                            <i class="fa-solid fa-wrench"></i> Tools
+                        </h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>PyCharm</span>
+                            <span>Postman</span>
+                            <span>Hostinger</span>
+                            <span>Netlify</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-cat">
+                        <h3 class="skill-cat-title">
+                            <i class="fa-solid fa-chart-line"></i> SEO & Marketing
+                        </h3>
+                        <div class="skill-tags">
+                            <span>Technical SEO</span>
+                            <span>Google Analytics</span>
+                            <span>Google Business</span>
+                            <span>EmailJS</span>
+                            <span>Domain & Hosting</span>
+                            <span>Meta Tags</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="alt-section">
+        <div class="container">
+            <div class="section-top">
+                <p class="section-label">Work History</p>
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-head">
+                    <div>
+                        <h3 class="exp-company">Builtline Construction</h3>
+                        <p class="exp-role">
+                            <i class="fa-solid fa-briefcase"></i> Full Stack Developer Intern
+                        </p>
+                    </div>
+                    <span class="exp-date">
+                        <i class="fa-solid fa-calendar-days"></i> Jan 2026 – Present · Bengaluru
+                    </span>
+                </div>
+
+                <ul class="exp-list">
+                    <li>Built 2 fully responsive production websites for real business clients — builtlineconstruction.com and builtlineinteriornivas.com</li>
+                    <li>Achieved 92% SEO performance score through meta tag optimization, keyword strategy, and structured content</li>
+                    <li>Improved user engagement by 30% via interactive UI/UX using HTML, CSS, JavaScript, and Bootstrap</li>
+                    <li>Integrated EmailJS contact forms enabling real-time client inquiry routing directly to business email</li>
+                    <li>Managed complete domain configuration and hosting setup on Hostinger end-to-end</li>
+                    <li>Used Google Analytics and Google Business Profile to track traffic and improve local search visibility</li>
+                </ul>
+
+                <div class="skill-tags mt-3">
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Bootstrap</span>
+                    <span>EmailJS</span>
+                    <span>SEO</span>
+                    <span>Git</span>
+                    <span>Hostinger</span>
+                    <span>Google Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-top">
+                <p class="section-label">My Work</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="badge-row">
+                                <span class="badge-live"><i class="fa-solid fa-circle"></i> Live</span>
+                                <span class="badge-github"><i class="fa-brands fa-github"></i> GitHub</span>
+                            </div>
+                            <h4 class="project-title">Builtline Construction Website</h4>
+                            <p class="project-desc">
+                                Production-ready construction business website showcasing end-to-end services including
+                                home building, renovation, interior design, and architectural planning. Features clean
+                                UI/UX, responsive layout, SEO optimization, and EmailJS contact form.
+                            </p>
+                            <div class="skill-tags mb-3">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                <span>Bootstrap</span><span>EmailJS</span><span>SEO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://builtlineconstruction.com/" target="_blank" class="btn-live">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site
+                                </a>
+                                <div class="project-links">
+                                <a href="https://github.com/pythonprogrammerRaji/builtlineconstructionmain" target="_blank" class="btn-gh">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="badge-row">
+                                <span class="badge-live"><i class="fa-solid fa-circle"></i> Live</span>
+                                <span class="badge-github"><i class="fa-brands fa-github"></i> GitHub</span>
+                            </div>
+                            <h4 class="project-title">Builtline Interior Nivas Website</h4>
+                            <p class="project-desc">
+                                Modern interior design website showcasing living room, bedroom, modular kitchen,
+                                pooja room, dining room, and commercial interiors. Includes blog-style content pages
+                                for design inspiration and EmailJS contact form for client inquiries.
+                            </p>
+                            <div class="skill-tags mb-3">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                <span>Bootstrap</span><span>EmailJS</span><span>SEO</span><span>UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.builtlineinteriornivas.com/" target="_blank" class="btn-live">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site
+                                </a>
+                                <div class="project-links">
+                                <a href="https://github.com/pythonprogrammerRaji/builtlineinteriornivaMain" target="_blank" class="btn-gh">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="badge-row">
+                                <span class="badge-live"><i class="fa-solid fa-circle"></i> Live</span>
+                                <span class="badge-github"><i class="fa-brands fa-github"></i> GitHub</span>
+                            </div>
+                            <h4 class="project-title">Clove Infomatic – Institute Finder</h4>
+                            <p class="project-desc">
+                                Web application where students can search for the best online and offline programming
+                                institutes. Provides full details about courses, placements, and institute information
+                                to help students make informed learning decisions.
+                            </p>
+                            <div class="skill-tags mb-3">
+                                <span>HTML5</span><span>CSS3</span>
+                                <span>JavaScript</span><span>Bootstrap</span>
+                                <span>EmailJS</span><span>Netlify</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://cloveinfomatic.netlify.app/" target="_blank" class="btn-live">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                                <a href="https://github.com/pythonprogrammerRaji/clove-infomatic.git" target="_blank" class="btn-gh">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="badge-row">
+                                <span class="badge-github"><i class="fa-brands fa-github"></i> GitHub</span>
+                            </div>
+                            <h4 class="project-title">Blood Bank Management System</h4>
+                            <p class="project-desc">
+                                Full-stack blood bank system using Flask and SQLite. Donors can register and donate
+                                blood, automatically increasing stock. Patients can request blood reducing stock in
+                                real time. Includes secure login, CRUD modules and a responsive HTML/CSS interface.
+                            </p>
+                            <div class="skill-tags mb-3">
+                                <span>Python</span><span>Flask</span><span>SQLite</span>
+                                <span>HTML5</span><span>CSS3</span><span>REST API</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/pythonprogrammerRaji/Blood_bank_DBMS_Project.git" target="_blank" class="btn-gh">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="project-body">
+                            <div class="badge-row">
+                                <span class="badge-github"><i class="fa-brands fa-github"></i> GitHub</span>
+                            </div>
+                            <h4 class="project-title">Fruit & Vegetable AI Classifier</h4>
+                            <p class="project-desc">
+                                AI-powered web application using TensorFlow and Flask to classify fruits and vegetables
+                                from images. Displays detailed nutritional information including vitamins and health
+                                benefits for each identified item.
+                            </p>
+                            <div class="skill-tags mb-3">
+                                <span>Python</span><span>TensorFlow</span><span>Flask</span>
+                                <span>HTML5</span><span>CSS3</span><span>AI / ML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/pythonprogrammerRaji" target="_blank" class="btn-gh">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="alt-section">
+        <div class="container">
+            <div class="section-top">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="row g-4 align-items-start">
+
+                <!-- Left - Info cards -->
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3">
+
+                        <a href="mailto:rajeshwarirajeshwari34879@gmail.com" class="contact-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="ci-label">Email</p>
+                                <p class="ci-val">rajeshwarirajeshwari34879@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919019291876" class="contact-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="ci-label">Phone</p>
+                                <p class="ci-val">+91-9019291876</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rajeshwari-65411527a/" target="_blank" class="contact-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <p class="ci-label">LinkedIn</p>
+                                <p class="ci-val">linkedin.com/in/rajeshwari-65411527a</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/pythonprogrammerRaji" target="_blank" class="contact-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div>
+                                <p class="ci-label">GitHub</p>
+                                <p class="ci-val">github.com/pythonprogrammerRaji</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="ci-label">Location</p>
+                                <p class="ci-val">Bengaluru, Karnataka, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right - Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3 class="form-title">Send a Message</h3>
+
+                        <label class="form-label-custom">Your Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+
+                        <label class="form-label-custom">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+
+                        <label class="form-label-custom">Message</label>
+                        <textarea id="message" class="form-input" rows="5" placeholder="Write your message here..." required></textarea>
+
+                        <button class="btn-main w-100 mt-3" onclick="sendMessage()">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>Designed & Built by <span>Rajeshwari</span> &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; Bengaluru 🇮🇳</p>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My Script -->
+    <script src="static/js/script.js"></script>
+
+
+</body>
+</html>
