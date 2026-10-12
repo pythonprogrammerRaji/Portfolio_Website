@@ -21,10 +21,10 @@ function toggleTheme() {
 // ================================================
 
 var roles = [
-    { text: "Full Stack Developer", color: "#2563eb" },
-    { text: "Frontend Developer",   color: "#e96443" },
-    { text: "MCA Student",          color: "#16a34a" },
-    { text: "Web Developer",         color: "#9333ea" }
+    { text: "Junior Full Stack Developer", color: "#2563eb" },
+    // { text: "Frontend Developer",   color: "#e96443" },
+    { text: "MCA Graduates",          color: "#16a34a" },
+    { text: "Freelancer Web Developer",         color: "#9333ea" }
 ];
 
 var roleIndex = 0;
@@ -68,11 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(typeText, 600);
     }
 });
-
-
-// ================================================
-//   CONTACT FORM  –  EmailJS
-// ================================================
 
 function sendMessage() {
 
